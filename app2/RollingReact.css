@@ -1,0 +1,23 @@
+.RollingReact {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.React-Logo {
+    height: 200px;
+    animation: React-Logo-Roll 5s infinite cubic-bezier(.11,.68,.53,.91);
+    position: absolute;
+}
+
+@keyframes React-Logo-Roll {
+    from {
+        transform: rotate(0deg);
+        right: 100%;
+    }
+    to {
+        transform: rotate(1440deg);
+        right: -260px;
+    }
+}

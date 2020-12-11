@@ -40,15 +40,11 @@ module.exports = [
           'app2': 'app2'
         },
         exposes: {
-          './App': './app1/App.js'
+          './AppContainer': './app1/AppContainer.js'
         },
         shared: {
-          'react': {
-            eager: true
-          },
-          'react-dom': {
-            eager: true
-          }
+          'react': { eager: true },
+          'react-dom': { eager: true }
         }
       }),
       new HtmlWebpackPlugin({
@@ -96,12 +92,8 @@ module.exports = [
           './RollingReact': './app2/RollingReact.js'
         },
         shared: {
-          'react': {
-            eager: true
-          },
-          'react-dom': {
-            eager: true
-          }
+          'react': { eager: true },
+          'react-dom': { eager: true }
         }
       }),
       new HtmlWebpackPlugin({
